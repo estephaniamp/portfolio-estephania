@@ -1,0 +1,141 @@
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./projects.css");
+@import url("./project-card.css");
+@import url("./about.css");
+@import url("./contact-cta.css");
+@import url("./footer.css");
+@import url("./popup.css");
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #1b262f;
+  background: #faf8f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 84% 8%, rgba(235, 197, 191, 0.24), transparent 30%),
+    #faf8f6;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px 7%;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #69727a;
+}
+
+.eyebrow_light {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.button {
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button_dark {
+  border-color: #15222b;
+  background: #15222b;
+  color: white;
+  box-shadow: 0 10px 28px rgba(21, 34, 43, 0.14);
+}
+
+.button_outline {
+  border-color: #7b858d;
+  background: rgba(255, 255, 255, 0.58);
+  color: #1b262f;
+}
+
+.button_blush {
+  min-width: 170px;
+  background: #efc7c0;
+  color: #17222a;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(89, 101, 96, 0.09);
+  font-size: 13px;
+  color: #4e5a61;
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 64px 22px;
+  }
+
+  .button {
+    min-height: 46px;
+  }
+}

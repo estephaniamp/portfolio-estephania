@@ -1,0 +1,31 @@
+.contact-cta {
+  max-width: none;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: #17242c;
+  color: white;
+}
+
+.contact-cta h2 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 74px);
+  letter-spacing: -0.04em;
+}
+
+.contact-cta p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 14px 0 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 760px) {
+  .contact-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
