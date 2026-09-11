@@ -147,6 +147,11 @@
 }
 
 @media (max-width: 620px) {
+  .hero {
+    gap: 24px;
+    padding-top: 24px;
+  }
+
   .hero__title {
     font-size: 58px;
   }
@@ -155,18 +160,48 @@
     font-size: 16px;
   }
 
+  .hero__actions {
+    margin-top: 26px;
+  }
+
+  .hero__socials {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .hero__socials a {
+    gap: 7px;
+    font-size: 13px;
+  }
+
   .hero__visual {
-    height: 420px;
+    height: 400px;
+    margin-top: 0;
   }
 
   .hero__shape_type_a {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
+
+    top: 18px;
+    left: 90px;
+  }
+
+  .hero__shape_type_b {
+    width: 270px;
+    height: 300px;
+
+    right: -45px;
+    bottom: 20px;
+
+    transform: rotate(28deg);
   }
 
   .hero__laptop {
-    width: 90%;
-    left: 16px;
+    width: 88%;
+
+    top: 62px;
+    left: 20px;
   }
 
   .hero__screen {
